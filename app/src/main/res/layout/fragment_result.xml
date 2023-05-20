@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ui.result.ResultFragment">
+
+    <Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/backround_toolbar"
+        android:titleTextColor="@color/white"
+        android:title="@string/text_result_quiz" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        app:cardCornerRadius="8dp"
+        android:elevation="4dp"
+        app:strokeColor="@color/purple_500"
+        app:strokeWidth="2dp"
+        app:layout_constraintVertical_bias="0.35"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="16dp"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_your_result"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textColor="@color/purple_200"
+                android:textSize="24sp"
+                android:fontFamily="@font/lato_black"
+                android:id="@+id/tv_res" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_result"
+                app:layout_constraintTop_toBottomOf="@id/tv_res"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:textSize="20sp"
+                android:layout_marginHorizontal="8dp"
+                android:gravity="center"
+                android:textColor="#18A61E"
+                android:layout_marginTop="16dp"
+                android:id="@+id/tv_result" />
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/card_view"
+        android:text="@string/text_restart"
+        android:textColor="@color/color_text"
+        android:textSize="20sp"
+        android:fontFamily="@font/lato_regular"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/tv_restart"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_restart"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="32dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_no"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/btn_background_no"
+            android:text="@string/text_no"
+            android:textColor="@color/white"
+            android:layout_marginEnd="2dp"
+            android:fontFamily="@font/lato_regular"
+            />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/text_yes"
+            android:layout_marginStart="2dp"
+            android:background="@drawable/btn_background_yes"
+            android:textColor="@color/white"
+            android:fontFamily="@font/lato_regular"
+            />
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

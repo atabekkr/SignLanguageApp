@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Ím-ishara tili</string>
+    <string name="text_tablo">%s/%s</string>
+    <string name="text_result">Siz %s sorawdan %s-ne duris juwap berdińiz</string>
+    <string name="text_result_word">%s ochko</string>
+    <string name="countdown_timer">0:%s</string>
+    <string name="tv_check">Ochko: %s</string>
+    <string name="text_sign">Ím-ishara tili</string>
+    <string name="text_alphabet">Alipbe</string>
+    <string name="tv_by_word">Hárip boyınsha</string>
+    <string name="text_sign_quiz">Ím-ishara boyınsha</string>
+    <string name="text_sign_select">Ím-ishara saylań</string>
+    <string name="text_time">Waqit:</string>
+    <string name="text_result_quiz">Nátiyje</string>
+    <string name="text_your_result">Sizdiń nátiyjeńiz:</string>
+    <string name="text_restart">Jańadan baslawdi qáleysizbe?</string>
+    <string name="text_yes">awa</string>
+    <string name="text_no">yaq</string>
+    <string name="text_right_or_wrong">Duris-qáte</string>
+</resources>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dimen_iv">120dp</dimen>
+    <dimen name="text_sign_size">80sp</dimen>
+    <dimen name="dimen_margin_horizontal_alph">8dp</dimen>
+</resources>

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.atabekdev.signlanguage.ui.main.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_alphabetFragment"
+            app:destination="@id/alphabetFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_questionFragment"
+            app:destination="@id/questionFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_wordFragment"
+            app:destination="@id/wordFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_signFragment"
+            app:destination="@id/signFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/alphabetFragment"
+        android:name="com.atabekdev.signlanguage.ui.alphabet.AlphabetFragment"
+        android:label="fragment_alphabet"
+        tools:layout="@layout/fragment_alphabet" />
+    <fragment
+        android:id="@+id/questionFragment"
+        android:name="com.atabekdev.signlanguage.ui.question.QuestionFragment"
+        android:label="fragment_question"
+        tools:layout="@layout/fragment_question" >
+        <action
+            android:id="@+id/action_questionFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.atabekdev.signlanguage.ui.result.ResultFragment"
+        android:label="fragment_result"
+        tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="count"
+            app:argType="string" />
+        <argument
+            android:name="all"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultFragment_to_mainFragment"
+            app:destination="@id/mainFragment"
+            app:popUpTo="@id/nav_graph.xml" />
+    </fragment>
+    <fragment
+        android:id="@+id/wordFragment"
+        android:name="com.atabekdev.signlanguage.ui.word.WordFragment"
+        android:label="fragment_by_word"
+        tools:layout="@layout/fragment_by_word" >
+        <action
+            android:id="@+id/action_wordFragment_to_resultWordFragment"
+            app:destination="@id/resultWordFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultWordFragment"
+        android:name="com.atabekdev.signlanguage.ui.result.ResultWordFragment"
+        android:label="fragment_result_word"
+        tools:layout="@layout/fragment_result_word" >
+        <argument
+            android:name="point"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultWordFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+        <action
+            android:id="@+id/action_resultWordFragment_to_wordFragment"
+            app:destination="@id/wordFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signFragment"
+        android:name="com.atabekdev.signlanguage.ui.bysign.SignFragment"
+        android:label="fragment_by_sign"
+        tools:layout="@layout/fragment_by_sign" >
+        <action
+            android:id="@+id/action_signFragment_to_resultSignFragment"
+            app:destination="@id/resultSignFragment"
+            app:popUpTo="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultSignFragment"
+        android:name="com.atabekdev.signlanguage.ui.result.ResultSignFragment"
+        android:label="fragment_result_sign"
+        tools:layout="@layout/fragment_result_sign" >
+        <argument
+            android:name="point"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_resultSignFragment_to_signFragment"
+            app:destination="@id/signFragment"
+            app:popUpTo="@id/mainFragment" />
+        <action
+            android:id="@+id/action_resultSignFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+</navigation>
