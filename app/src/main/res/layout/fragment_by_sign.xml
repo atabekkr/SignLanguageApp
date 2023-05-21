@@ -21,7 +21,7 @@
             android:layout_gravity="center"
             android:textSize="22sp"
             android:textColor="@color/white"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/montserat"
             android:layout_marginStart="16dp" />
 
     </LinearLayout>
@@ -44,7 +44,7 @@
             android:layout_gravity="center"
             android:textColor="@color/color_text"
             android:textSize="22sp"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/montserat"
             android:layout_marginStart="32dp"
             />
 
@@ -56,7 +56,7 @@
             android:layout_gravity="center"
             android:textSize="22sp"
             android:textColor="@color/color_text"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/montserat"
             android:layout_marginStart="4dp"
             />
 
@@ -70,7 +70,7 @@
             android:gravity="end"
             android:layout_marginEnd="32dp"
             android:textSize="22sp"
-            android:fontFamily="@font/lato_regular" />
+            android:fontFamily="@font/montserat" />
 
     </LinearLayout>
 
@@ -111,7 +111,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/color_text"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/montserat"
                 android:textSize="@dimen/text_sign_size"
                 android:foreground="@drawable/background_iv1"
                 android:clickable="true"
@@ -129,7 +129,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/color_text"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/montserat"
                 android:textSize="@dimen/text_sign_size"
                 android:clickable="true"
                 android:focusable="true"
@@ -146,7 +146,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/color_text"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/montserat"
                 android:textSize="@dimen/text_sign_size"
                 android:layout_height="@dimen/dimen_iv"
                 android:layout_weight="1"
@@ -174,7 +174,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/color_text"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/montserat"
                 android:textSize="@dimen/text_sign_size"
                 android:src="@drawable/a" />
 
@@ -189,7 +189,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/color_text"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/montserat"
                 android:textSize="@dimen/text_sign_size"
                 android:src="@drawable/a" />
 
@@ -202,7 +202,7 @@
                 android:layout_gravity="center"
                 android:gravity="center"
                 android:textColor="@color/color_text"
-                android:fontFamily="@font/lato_regular"
+                android:fontFamily="@font/montserat"
                 android:textSize="@dimen/text_sign_size"
                 android:layout_height="@dimen/dimen_iv"
                 android:layout_weight="1"

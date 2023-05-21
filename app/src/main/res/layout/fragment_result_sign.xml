@@ -45,7 +45,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textColor="@color/purple_200"
                 android:textSize="24sp"
-                android:fontFamily="@font/lato_black"
+                android:fontFamily="@font/montserat"
                 android:id="@+id/tv_res" />
 
             <TextView
@@ -57,6 +57,7 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 android:textSize="28sp"
                 android:textColor="#18A61E"
+                android:fontFamily="@font/montserat"
                 android:layout_marginTop="16dp"
                 android:id="@+id/tv_result" />
 
@@ -77,7 +78,7 @@
         android:text="@string/text_restart"
         android:textColor="@color/color_text"
         android:textSize="20sp"
-        android:fontFamily="@font/lato_regular"
+        android:fontFamily="@font/montserat"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/tv_restart"
         />
@@ -100,7 +101,7 @@
             android:text="@string/text_no"
             android:textColor="@color/white"
             android:layout_marginEnd="2dp"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/montserat"
             />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -112,7 +113,7 @@
             android:layout_marginStart="2dp"
             android:background="@drawable/btn_background_yes"
             android:textColor="@color/white"
-            android:fontFamily="@font/lato_regular"
+            android:fontFamily="@font/montserat"
             />
 
 

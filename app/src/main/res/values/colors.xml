@@ -11,4 +11,5 @@
     <color name="color_right">#2AB52F</color>
     <color name="color_wrong">#CBF41414</color>
     <color name="color_transparent">#00000000</color>
+    <color name="color_bar">#0DBB86FC</color>
 </resources>
