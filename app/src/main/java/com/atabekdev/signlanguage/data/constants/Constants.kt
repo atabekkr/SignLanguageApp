@@ -15,38 +15,39 @@ object Constants {
 
         val list = mutableListOf<WordData>()
         list.add(WordData("А"))
-        list.add(WordData("Б"))
-        list.add(WordData("В"))
-        list.add(WordData("Г"))
-        list.add(WordData("Д"))
-        list.add(WordData("Е"))
-        list.add(WordData("Ё"))
-        list.add(WordData("Ж"))
-        list.add(WordData("З"))
-        list.add(WordData("И"))
-        list.add(WordData("Й"))
-        list.add(WordData("К"))
-        list.add(WordData("Л"))
-        list.add(WordData("М"))
-        list.add(WordData("Н"))
-        list.add(WordData("О"))
-        list.add(WordData("П"))
-        list.add(WordData("Р"))
-        list.add(WordData("С"))
-        list.add(WordData("Т"))
-        list.add(WordData("У"))
-        list.add(WordData("Ф"))
-        list.add(WordData("Х"))
-        list.add(WordData("Ц"))
-        list.add(WordData("Ч"))
-        list.add(WordData("Ш"))
-        list.add(WordData("Щ"))
-        list.add(WordData("Ъ"))
-        list.add(WordData("Ы"))
-        list.add(WordData("Ь"))
-        list.add(WordData("Э"))
-        list.add(WordData("Ю"))
-        list.add(WordData("Я"))
+        list.add(WordData("Á"))
+        list.add(WordData("B"))
+        list.add(WordData("C"))
+        list.add(WordData("CH"))
+        list.add(WordData("D"))
+        list.add(WordData("E"))
+        list.add(WordData("F"))
+        list.add(WordData("G"))
+        list.add(WordData("Ǵ"))
+        list.add(WordData("H"))
+        list.add(WordData("X"))
+        list.add(WordData("I"))
+        list.add(WordData("Í"))
+        list.add(WordData("J"))
+        list.add(WordData("K"))
+        list.add(WordData("Q"))
+        list.add(WordData("L"))
+        list.add(WordData("M"))
+        list.add(WordData("N"))
+        list.add(WordData("Ń"))
+        list.add(WordData("O"))
+        list.add(WordData("Ó"))
+        list.add(WordData("P"))
+        list.add(WordData("R"))
+        list.add(WordData("S"))
+        list.add(WordData("SH"))
+        list.add(WordData("T"))
+        list.add(WordData("U"))
+        list.add(WordData("Ú"))
+        list.add(WordData("V"))
+        list.add(WordData("W"))
+        list.add(WordData("Y"))
+        list.add(WordData("Z"))
 
         return list
 
@@ -55,38 +56,39 @@ object Constants {
     fun provideImageWords(): List<Int> {
         val list = mutableListOf<Int>()
         list.add(R.drawable.a)
+        list.add(R.drawable.a2)
         list.add(R.drawable.b)
-        list.add(R.drawable.v)
-        list.add(R.drawable.g)
+        list.add(R.drawable.c)
+        list.add(R.drawable.ch)
         list.add(R.drawable.d)
         list.add(R.drawable.e)
-        list.add(R.drawable.ye)
-        list.add(R.drawable.j)
-        list.add(R.drawable.z)
+        list.add(R.drawable.f)
+        list.add(R.drawable.g)
+        list.add(R.drawable.g2)
+        list.add(R.drawable.h)
+        list.add(R.drawable.x)
+        list.add(R.drawable.i2)
         list.add(R.drawable.i)
-        list.add(R.drawable.ikratkiy)
+        list.add(R.drawable.j)
         list.add(R.drawable.k)
+        list.add(R.drawable.q)
         list.add(R.drawable.l)
         list.add(R.drawable.m)
         list.add(R.drawable.n)
+        list.add(R.drawable.n2)
         list.add(R.drawable.o)
+        list.add(R.drawable.o2)
         list.add(R.drawable.p)
         list.add(R.drawable.r)
         list.add(R.drawable.s)
+        list.add(R.drawable.sh)
         list.add(R.drawable.t)
         list.add(R.drawable.u)
-        list.add(R.drawable.f)
-        list.add(R.drawable.x)
-        list.add(R.drawable.ts)
-        list.add(R.drawable.ch)
-        list.add(R.drawable.sh)
-        list.add(R.drawable.she)
-        list.add(R.drawable.tv_znak)
-        list.add(R.drawable.iyy)
-        list.add(R.drawable.m_znak)
-        list.add(R.drawable.iee)
-        list.add(R.drawable.yu)
-        list.add(R.drawable.ya)
+        list.add(R.drawable.u2)
+        list.add(R.drawable.v)
+        list.add(R.drawable.w)
+        list.add(R.drawable.y)
+        list.add(R.drawable.z)
 
         return list
     }
@@ -96,10 +98,10 @@ object Constants {
         val listOfWords = provideWords()
         val list = mutableListOf<QuestionData>()
 
-        for (i in 0..32) {
+        for (i in 0..listOfWords.size - 1) {
             val wordSet = mutableSetOf<String>()
             do {
-                wordSet.add(listOfWords[Random.nextInt(0..32)].word)
+                wordSet.add(listOfWords[Random.nextInt(0..listOfWords.size - 1)].word)
             } while (wordSet.size == 3)
 
             list.add(
@@ -107,8 +109,8 @@ object Constants {
                     listOfImages[i],
                     listOf(
                         listOfWords[i].word,
-                        listOfWords[Random.nextInt(0..32)].word,
-                        listOfWords[Random.nextInt(0..32)].word,
+                        listOfWords[Random.nextInt(0..listOfWords.size - 1)].word,
+                        listOfWords[Random.nextInt(0..listOfWords.size - 1)].word,
                         listOfWords[i].word
                     )
                 )
@@ -124,15 +126,15 @@ object Constants {
         val listOfImages = provideImageWords()
 
 
-        for (i in 0 .. 32) {
+        for (i in 0 .. listOfWords.size - 1) {
             val randomId = Random.nextInt(0..5)
 
             val listImages = mutableListOf<Int>()
-            listImages.add(listOfImages[Random.nextInt(0..32)])
-            listImages.add(listOfImages[Random.nextInt(0..32)])
-            listImages.add(listOfImages[Random.nextInt(0..32)])
-            listImages.add(listOfImages[Random.nextInt(0..32)])
-            listImages.add(listOfImages[Random.nextInt(0..32)])
+            listImages.add(listOfImages[Random.nextInt(0..listOfWords.size - 1)])
+            listImages.add(listOfImages[Random.nextInt(0..listOfWords.size - 1)])
+            listImages.add(listOfImages[Random.nextInt(0..listOfWords.size - 1)])
+            listImages.add(listOfImages[Random.nextInt(0..listOfWords.size - 1)])
+            listImages.add(listOfImages[Random.nextInt(0..listOfWords.size - 1)])
             listImages.add(randomId, listOfImages[i])
 
             list.add(
@@ -153,15 +155,15 @@ object Constants {
         val listOfWords = provideWords()
 
 
-        for (i in 0 .. 32) {
+        for (i in 0 .. 33) {
             val randomId = Random.nextInt(0..5)
 
             val wordList = mutableListOf<String>()
-            wordList.add(listOfWords[Random.nextInt(0..32)].word)
-            wordList.add(listOfWords[Random.nextInt(0..32)].word)
-            wordList.add(listOfWords[Random.nextInt(0..32)].word)
-            wordList.add(listOfWords[Random.nextInt(0..32)].word)
-            wordList.add(listOfWords[Random.nextInt(0..32)].word)
+            wordList.add(listOfWords[Random.nextInt(0..listOfWords.size - 1)].word)
+            wordList.add(listOfWords[Random.nextInt(0..listOfWords.size - 1)].word)
+            wordList.add(listOfWords[Random.nextInt(0..listOfWords.size - 1)].word)
+            wordList.add(listOfWords[Random.nextInt(0..listOfWords.size - 1)].word)
+            wordList.add(listOfWords[Random.nextInt(0..listOfWords.size - 1)].word)
             wordList.add(randomId, listOfWords[i].word)
 
             list.add(

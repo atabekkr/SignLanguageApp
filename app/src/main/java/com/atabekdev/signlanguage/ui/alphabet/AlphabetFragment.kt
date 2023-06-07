@@ -19,8 +19,6 @@ import kotlin.math.abs
 class AlphabetFragment : Fragment(R.layout.fragment_alphabet) {
 
     private lateinit var binding: FragmentAlphabetBinding
-    private var currentIdOfWord = 0
-    private var currentIdOfImage = 0
     private val listOfWords = Constants.provideWords()
     private val listOfImages = Constants.provideImageWords()
 
